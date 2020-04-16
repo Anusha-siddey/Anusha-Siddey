@@ -1,5 +1,5 @@
 /*program that explain the int* char[] as private members
-filename:case6a.cc
+filename:case6b.cc
 */
 #include<iostream>
 #include<string.h>
