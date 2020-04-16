@@ -65,6 +65,7 @@ if(argc==2) //condition to check the argument count is 2
                 cout<<"float"<< "\t"<<Float<<"\t"<<sizeof(Float)<<endl;
                 }
 }
+	}
 return 0;
 }
 
