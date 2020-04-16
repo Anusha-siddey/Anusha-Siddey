@@ -1,5 +1,5 @@
 /*program to explain the operator overloading
-filename:case6.cc
+filename:case6a.cc
 */
 
 #include<iostream>
