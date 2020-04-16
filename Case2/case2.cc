@@ -10,7 +10,7 @@ using namespace std;
  Parameters passed: integer
  return type :int
 */
-int Sumofsquare(int iN)
+void Sumofsquare(int iN)
 {
 	int iSum=0;
 	  while(iN > 0)  //checks the number is greater than zero 
