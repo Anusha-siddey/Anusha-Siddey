@@ -36,8 +36,8 @@ if(argc==2) //condition to check the argument count is 2
         cout<<"uasage ./a.out arg1 arg2 arg3 arg4"<<endl;
 }
 
- if(argc>2)  //condition for the argument count greater than the 2
-{
+	else
+	{
 
         for(Arg=1;Arg<argc;Arg++)
         {
@@ -64,12 +64,6 @@ if(argc==2) //condition to check the argument count is 2
                 else
                 cout<<"float"<< "\t"<<Float<<"\t"<<sizeof(Float)<<endl;
                 }
-}
-}
-else
-{	
-	cout<<"No arguments are given"<<endl;
-	cout<<"please reffer by giving -h"<<endl; 
 }
 return 0;
 }
