@@ -15,8 +15,15 @@ void display()
 } 
 
 // main function 
-int main() 
-{ 
+int main(int argc,char* argv[])	
+{
+	if(argc==2)
+	{
+		cout<<"Usage: ./a.out"<<endl;
+		cout<<"Explains the variable scope"<<endl;
+	}
+	else
+	{
         
 	//displaying the global variable
 	display();
@@ -24,5 +31,6 @@ int main()
 	// conflict between local and global variable with same name then the local variable comes first
 	inum1 = 10; 
 	display(); 
+	}
 } 
 
