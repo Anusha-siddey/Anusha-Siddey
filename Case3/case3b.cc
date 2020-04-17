@@ -1,76 +1,24 @@
-/*program that explains the storage classes
-filename:case3b.cc
-Date:10/04/2020
-*/
+//program that explains the type modifiers
 
-#include<iostream>
-#include<stdlib.h>
+#include <iostream>
 using namespace std;
-extern int g;     //storage class extern variable declaration
 
-/*
-function name:storageauto
-return type:int
-parameters:int n1,int n2
-*/
-int storageauto(int n1,int n2)
+// main function 
+int main()
 {
-	auto int s;
-	s=n1+n2;
-	return s;
-}
-/*
-function name: storagestatic
-return type:void
-function that describes the static storage class
-*/
-
-static int f=5;   //static variable declaration
-void storagestatic()
-{
-	static int i=0;
-	cout<<"static storage::f=\t"<<f--<<endl;
-	cout<<"static storage::i=\t"<<i++<<endl;
-}
-
-/* 
-function name: storageregister
-return type:void
-function that describes the register storage class
-*/
-void storageregister()
-{
-	register int roll=35;
-	cout<<"Register Variable roll:"<<roll<<endl;
-}
-/*function name:storageextern
-return type:void
-function that describe the extern storage classes
-*/
-void storageextern()
-{
-	int g=10;
-cout<<"Extern Storage ::g is"<<g<<endl; //display the extern variable
-}
-
-int main(int argc,char* argv[])
-{
-	int i=2,j=3,k,g=7;
-	if(argc==2)
-	{
-	cout<<"useage:: ./a.out"<<endl;
-	cout<<"describe the storage classes"<<endl;
-	}
-else
-{
-//auto storage fucntion calling
-k=storageauto(i,j);  
-cout<<"Auto storage :: Sum="<<k<<endl; 
-//calling all storage classes functions    
-storageextern();
-storageregister();
-storagestatic();
-cout<<"g is:"<<g<<endl;
-return 0;
-}
+  short int value1;
+  long int value2;
+  unsigned short value3;
+  signed short value4;
+  
+  cout << "enter value: ";
+  cin>>value2;
+  value1=value3=value4=value2;    //value of value1, value2, value3 and value4 is assigned same 
+ 
+  cout << " short int value1 = " << value1 << endl;        //outputs of the values
+  cout << " long int value2 = " << value2 << endl;
+  cout << " unsigned short value3 = " << value3 << endl;
+  cout << " signed short value4 = " << value4 << endl;
+  
+  return 0;
 }
