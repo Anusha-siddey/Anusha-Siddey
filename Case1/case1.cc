@@ -20,6 +20,7 @@ bool Verify(string str)
         {
                 return true; // if the string length is 1 then it returns true
         }
+	return false;
 
 }
 
