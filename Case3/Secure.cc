@@ -93,11 +93,6 @@ public:
             {
                 exit(0);
             }
-
-			if(!newFile4)
-			{
-				cout<<" file not found"<< endl ;
-			}
 			while(!newFile4.eof())
 	 		{
 
