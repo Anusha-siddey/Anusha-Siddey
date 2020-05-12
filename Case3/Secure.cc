@@ -89,7 +89,7 @@ public:
             cin>>ch;
             getchar();
             //if the user option is y then it display the content in an decrypted form
-            if(chr=='n'||chr== 'N')
+            if(ch=='n'||ch== 'N')
             {
                 exit(0);
             }
