@@ -75,8 +75,8 @@ And also write the key to a file
                     }
                 else
                     {
-                        //to get the string password from the file
-                        getline(Encryptfile,Password);
+                        //to read the string password from the file
+                        Encryptfile>>Password;
                         //assigning the char* to a string for the key comparison
                         AssignPassword=strrev(password);
                         //checks for the key is equal or not
