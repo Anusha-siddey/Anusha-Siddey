@@ -1,0 +1,20 @@
+#ifndef SECURE_H_INCLUDED
+#define SECURE_H_INCLUDED
+
+
+#include<iostream>
+#include<fstream>
+#include<string.h>
+using namespace std;
+class Secure
+{
+    public:
+    char text[100];
+    int position;
+    char character,replacechar,accept='y';
+    fstream originalfile;
+    fstream Encryptfile;
+    void Encryption(char*,char*);
+    void Decryption(char*,char*);
+};
+#endif // SECURE_H_INCLUDED
