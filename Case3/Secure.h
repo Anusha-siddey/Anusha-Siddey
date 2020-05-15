@@ -8,12 +8,13 @@
 using namespace std;
 class Secure
 {
-    public:
+    private:
     char text[100];
     int position;
     char character,replacechar,accept='y';
     fstream originalfile;
     fstream Encryptfile;
+    public:
     void Encryption(char*,char*);
     void Decryption(char*,char*);
 };
